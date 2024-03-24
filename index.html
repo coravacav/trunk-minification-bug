@@ -1,0 +1,20 @@
+<!doctype html>
+<html class="size-full">
+
+<head>
+  <base data-trunk-public-url />
+  <link data-trunk rel="rust" data-wasm-opt="z" />
+  <link data-trunk rel="copy-file" href="treesitter/rust.wasm" />
+  <link data-trunk rel="copy-file" href="treesitter/tree-sitter.wasm" />
+  <!--
+    Changing it to this makes it work! The only difference is `data-no-minify`
+
+    <script data-trunk data-no-minify src="treesitter/tree-sitter.js"></script> 
+  -->
+  <script data-trunk src="treesitter/tree-sitter.js"></script>
+  <script data-trunk src="treesitter/highlighting.js"></script>
+</head>
+
+<body class="size-full"></body>
+
+</html>
